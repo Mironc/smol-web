@@ -2,4 +2,4 @@ FROM php:8.3-cli-alpine
 WORKDIR /app
 COPY . .
 
-CMD php index.php -s 0.0.0.0:$PORT
+CMD php -S 0.0.0.0:$PORT index.php
